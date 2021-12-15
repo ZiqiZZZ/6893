@@ -1,0 +1,23 @@
+# command line: main.py demo_old
+
+config: ./config/st_gcn/kinetics-skeleton/demo_old.yaml
+device:
+- 0
+height: 1080
+ignore_weights: []
+model: net.st_gcn.Model
+model_args:
+    edge_importance_weighting: true
+    graph_args:
+        layout: openpose
+        strategy: spatial
+    in_channels: 3
+    num_class: 400
+openpose: D:\6893\E6893_project-master\src\myapp\st-gcn-master/openpose/build/x64/Release
+output_dir: D:\6893\E6893_project-master\src\myapp\st-gcn-master/data/demo_result
+print_log: false
+save_log: true
+use_gpu: true
+video: D:\6893\E6893_project-master\src\myapp\st-gcn-master/resource/media/Pullups.mp4
+weights: ./models/st_gcn.kinetics.pt
+work_dir: ./work_dir/tmp
